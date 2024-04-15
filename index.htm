@@ -12,12 +12,7 @@ background-color: brown;
 color: white;
 padding: 30px;}
     
-    body {
-  background-image: url('prestopronta.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 90% 90%;
-}
+  
 h1   {text-align: center;color: green;font-size: 300px}
 p    {text-align: center;color: red;font-size: 160px}
 a    {text-align: center;color: blue;font-size: 60px}
@@ -30,8 +25,24 @@ a    {text-align: center;color: blue;font-size: 60px}
 
 <p>Ocmo</p>
 
-<h2 class="abong"> Balencho Elias </h2>
+<picture>
+  <source media="(min-width: 750px)" srcset="prestopronta.png">
+</picture>
 
+  
+<h2 class="abong"> Balencho Elias </h2>
+<p>Seleccione la opción correspondiente con su estado de ánimo</p>
+<form action="/action_page.php">
+  <input type="checkbox" id="mood1" name="mood1" value="Abong">
+  <label for="mood1"> Abong</label><br>
+  <input type="checkbox" id="mood2" name="mood" value="Agagus">
+  <label for="mood2"> Agagus</label><br>
+  <input type="checkbox" id="mood3" name="mood3" value="Gus">
+  <label for="mood3"> Gus</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+  
+  
 <a href="https://cdn.discordapp.com/emojis/1013832830578589726.gif?size=96&quality=lossless"> susy</a>
 
 </body>
